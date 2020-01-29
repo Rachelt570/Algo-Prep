@@ -1,0 +1,72 @@
+header {
+	padding: 1.5em;
+	background-color: #ccc;
+}
+#Header-List {
+	display: grid;
+	align-items: center;
+	grid-template-columns: 33% 34% 33%;
+	grid-column-gap: 1em;
+	grid-template-areas: 
+	"Logo Logged-In-Content Logged-Out-Content";
+}
+#Logo {
+	grid-area: Logo;
+	max-width: 5em;
+}
+
+#Logged-In-Content {
+	grid-area: Logged-In-Content;
+}
+#Logged-Out-Content {
+	float: right;
+	grid-area: Logged-Out-Content;
+}
+#Login-Form {
+	display: grid;
+	justify-items: center;
+	grid-area: Login-Form;
+	grid-template-areas: 
+	"Username-Input-Label Username-Input-Label"	
+	"Username-Input Username-Input"
+	"Password-Input-Label Password-Input-Label"
+	"Password-Input Password-Input"
+	"Login-Submit Login-Signup";	
+}
+#Login-Form #Username-Input-Label {
+	grid-area: Username-Input-Label;
+}
+#Login-Form #Username-Input {
+	grid-area: Username-Input;
+}
+#Login-Form #Password-Input-Label {
+	grid-area: Password-Input-Label;
+}
+#Login-Form #Password-Input {
+	grid-area: Password-Input;
+}
+#Login-Form #Login-Submit {
+	grid-area: Login-Submit;
+}
+#Login-Form #Login-Signup {
+	grid-area: Login-Signup;
+
+}
+.Account-Button {
+	background-color: blue;
+	color: #fff;
+	border-radius: 25px;
+	padding: 0.5em;
+	margin-top: 1em;
+	border: none;
+	box-shadow: 3px 2px #000000;
+}
+.Account-Button:hover{
+	background-color: blue;
+	color: #aaa;
+	border-radius: 25px;
+	padding: 0.5em;
+	margin-top: 1em;
+	border: none;
+	box-shadow: 3px 2px #000000;
+}

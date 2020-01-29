@@ -1,0 +1,77 @@
+		/* For specifics typing rules meant only for the signup.html file */
+header {
+	display: none;
+}
+html, #Outer-Wrapper, body {
+	height: 100%;
+}
+#Outer-Wrapper {
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	display: grid;
+	grid-template-rows: 10em 1fr 6em;
+	grid-template-areas: 
+	"Nav"
+	"Main"
+	"Footer"
+}
+
+main {
+	grid-area: Main;
+	padding: 0em 2em;
+	margin: 3em 0em;
+}
+#Signup-Form {
+
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"List"
+	"Submit";
+}
+#Signup-Form ul {
+	grid-area: List;
+} 
+#Signup-Form ul li {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	padding: 1em 0em;
+	grid-template-areas: 
+	"Label Input";
+}
+#Signup-Form ul li label {
+	grid-area: Label;
+}
+#Signup-Form ul li input {
+	grid-area: Input;
+}
+#Signup-Form #Signup-Submit {
+	grid-area: Submit;
+	background-color: #333;
+	color: #fff;
+	width: 10em;
+	justify-self: center;
+	padding: 1.25em;
+	border-radius: 75px;
+	border: none;
+}
+#Signup-Form #Signup-Submit:hover {
+	background-color: #555;
+}
+
+nav {
+	grid-area: Nav;
+}
+footer {
+	grid-area: Footer;
+}
+
+@media only screen and (min-width: 1200px) {
+	#Outer-Wrapper {
+	}
+	footer {
+
+	}
+}

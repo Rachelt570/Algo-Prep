@@ -1,0 +1,58 @@
+/* General Rules 
+to be applied across all pages
+*/
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
+html {
+	font-family: 'Playfair Display', serif;
+	background-color: aliceblue;
+}
+* {
+	font-size: 1em;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0em;
+    margin-inline-end:0em;
+}
+p {
+	padding: 1em 0em;
+}
+a {
+	text-decoration: none;
+}
+video {
+	width: 100%;
+}
+
+html, body, #Outer-Wrapper {
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+html {
+	font-size: 2.25em;
+}
+
+label {
+	font-size: 1.25em;
+}
+h1, h2, h3 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	padding: 1em 0em;
+}
+h1 {
+	font-size: 2em;
+}
+article {
+	margin: auto;
+	width: 80%;
+}
+input[type=text], input[type=email], input[type=password] {
+	border: 2px solid black;
+	text-indent: 0.5em;
+}

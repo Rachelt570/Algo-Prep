@@ -1,0 +1,11 @@
+To install:
+
+Copy School-Projects into your xampp/htdocs folder
+Using PHPMyAdmin create DB algo-prep and table users with 
+
+	idUsers int autoincrement not null primary 
+	nameUsers tinytext not null	
+	emailUsers tinytext not null
+	passwordUsers longtext not null
+
+See video for demonstration of features.

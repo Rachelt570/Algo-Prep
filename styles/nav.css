@@ -1,0 +1,57 @@
+#Main-Navigation {
+	height: 10em;
+	color: #fff;
+}
+
+#Main-Navigation-List {
+	background-color: #000;
+	padding: 1.5em 0em;
+	display: grid;
+	justify-items: center;
+	overflow: hidden;
+	grid-template-areas: 
+	"Home Problems Resources";
+}
+#Main-Navigation-List a {
+	color: #fff;
+}
+#Main-Navigation-List a:hover {
+	color: #ddd;
+}
+#Nav-Home {
+	grid-area: Home;
+}
+#Nav-Resources {
+	grid-area: Resources;
+}
+#Nav-Dropdown-Container {
+	text-align: center;
+	overflow: hidden;
+	grid-area: Problems;
+}
+#Dropdown-Content {
+	background: inherit;
+	position: absolute;
+	text-align: left;
+	display: none;
+}
+#Dropdown-Text {
+	padding: 0px;
+}
+#Dropdown-Content a {	
+	padding: 0.5em 0.5em;
+	background-color: transparent;
+	display: block;
+}
+
+#Nav-Dropdown-Container:hover {
+	background-color: #333;
+}
+#Nav-Dropdown-Container:hover #Dropdown-Content {
+	display: block;
+	z-index: 1;
+	overflow: all;
+}
+#Dropdown-Content a:hover {
+	background-color: #555;
+}
