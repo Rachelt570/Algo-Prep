@@ -1,0 +1,493 @@
+main {
+	display: grid;
+	grid-template-columns: auto;
+	justify-items: center;
+	grid-template-areas: 
+	"Header"
+	"About"
+	"Achievements";
+}
+h1 {
+	grid-area: Header;
+	margin: auto;
+	justify-self: center;
+
+}
+img {
+	width: 4em;
+	height: 4em;
+}
+#Achievements {
+	grid-area: Achievements;
+	background-color: #ccc;
+	color: #000;
+}
+#Achievements ul {
+	display: grid;
+	grid-template-areas:
+	"Header Header"
+	"Achievement-1 Achievement-2"
+	"Achievement-3 Achievement-4"
+	"Achievement-5 Achievement-6"
+	"Achievement-7 Achievement-Show-More";
+}
+
+#Achievements ul #Achievements-Header {
+	grid-area: Header;
+
+}
+#Achievements ul #Achievement-1 {
+	grid-area: Achievement-1;
+}
+#Achievements ul #Achievement-2 {
+	grid-area: Achievement-2;
+}
+#Achievements ul #Achievement-3 {
+	grid-area: Achievement-3;
+}
+#Achievements ul #Achievement-4 {
+	grid-area: Achievement-4;
+}
+#Achievements ul #Achievement-5 {
+	grid-area: Achievement-5;
+}
+#Achievements ul #Achievement-6 {
+	grid-area: Achievement-6;
+}
+#Achievements ul #Achievement-7 {
+	grid-area: Achievement-7;
+}
+#Achievements ul #Achievement-Show-More {
+	grid-area: Achievement-Show-More;
+}
+
+#Achievements ul li figure {
+	text-align: center;
+	padding: 2em 0em;
+}
+#Achievements ul li figure img {
+	max-width: 2em;
+	height: 2em;
+}
+
+
+#About {
+	display: grid;
+	grid-area: About;
+	justify-content: center;
+	grid-row-gap: 3em;
+	grid-template-areas:
+	"User-Head-Info-Section"
+	"About-Section"
+	"Professional-Section";
+}
+#About h2, h3 {
+	font-size: 1.5em;
+}
+#User-Head-Info-Section {
+	display: grid;
+	grid-area: User-Head-Info-Section;
+	justify-content: center;
+	grid-template-columns: 50% 50%;
+	grid-template-areas: 
+	"Header Header"
+	"User-Head-Info User-Head-Info";
+}
+#User-Head-Info-Section h2 {
+	grid-area: Header;
+}
+#User-Head-Info {
+	grid-area: User-Head-Info;
+	display: grid;
+	grid-template-areas: 
+	"User-Profile-Pic"
+	"User-Contact-Options"
+	"User-Contact-List";
+}
+
+#User-Profile-Pic {
+	grid-area: User-Profile-Pic;
+	display: grid;
+	grid-template-areas: 
+	"User-Profile-Figure"
+	"Upload-Profile-Pic-Form"
+	"Delete-Profile-Pic-Form";
+}
+#User-Profile-Figure {
+	grid-area: User-Profile-Figure;
+	justify-self: center;
+}
+#User-Profile-Picture {
+	width: 4em;
+	height: 4em;
+}
+#Upload-Profile-Pic-Form {
+	grid-area: Upload-Profile-Pic-Form;
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 70% 30%;
+	grid-template-areas: 
+	"Input-Profile-Photo Input-Profile-Submit";
+}
+#Delete-Profile-Pic-Form {
+	grid-area: Delete-Profile-Pic-Form;
+	display: grid;
+	grid-template-columns: 70% 30%;
+	grid-template-areas: 
+	". Input-Profile-Delete";
+}
+#Input-Profile-Delete {
+	grid-area: Input-Profile-Delete;
+}
+#User-Contact-Options {
+	grid-area: User-Contact-Options;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-areas:
+	"Add-to-Contact Remove-From-Contact";
+}
+#Add-to-Contact {
+	grid-area: Add-to-Contact;
+}
+#Remove-From-Contact {
+	grid-area: Remove-From-Contact;
+}
+#User-Contact-List {
+	display: grid;
+	grid-area: User-Contact-List;
+	grid-template-columns: 50% 50%;
+	justify-content: center;
+	grid-template-areas:
+	"Header Header"
+	"Contacts Contacts"
+	"Contact-Requests Add-Contact";
+}
+#Contact-Requests {
+	grid-area: Contact-Requests;
+	text-align: center;
+	padding: 3em 0em;
+	align-content: center;
+	justify-items: center;
+	display: grid;
+}
+#Contact-Requests img {
+	display: block;
+	width: 2em;
+	height: 2em;
+}
+#Contact-Requests a {
+	border: solid black 2px;
+	align-self: center;
+}
+#Add-Contact-Form {
+	grid-area: Add-Contact;
+	display: grid;
+	text-align: center;
+	grid-row-gap: 1em;
+	padding: 3em 0em;
+	grid-template-areas:
+	"Label"
+	"Input"
+	"Submit";
+}
+#Add-Contact-Form label {
+	grid-area: Label;
+}
+#Add-Contact-Form #Add-Contact-Input{
+	grid-area: Input;
+	text-align: center;
+}
+#Add-Contact-Form #Add-Contact-Submit {
+	grid-area: Submit;
+}
+#Add-Contact-Form 
+#User-Contact-List h3 {
+	grid-area: Header;
+}
+#User-Contact-List #Contacts {
+	grid-area: Contacts;
+	display: grid;
+	justify-items: center;
+	grid-row-gap: 2em;
+	grid-template-columns: 50% 50%;
+	grid-template-areas: 
+	"One Two"
+	"Three More";
+}
+#User-Contact-List #Contacts li a figure {
+	display: grid;
+	justify-items: center;
+	grid-template-areas: 
+	"Image"
+	"Caption"
+}
+#User-Contact-List #Contacts li a figure img {
+	grid-area: Image;
+	width: 4em;
+	height: 4em;
+}
+#User-Contact-List #Contacts li a figure figcaption {
+	grid-area: Caption;
+}
+#User-Contact-List #Contacts #ContactPH1L {
+	grid-area: One;
+}
+#User-Contact-List #Contacts #ContactPH2L {
+	grid-area: Two;
+}
+#User-Contact-List #Contacts #ContactPH3L {
+	grid-area: Three;
+}
+#User-Contact-List #Contacts #Contact-Show-MoreL{
+	grid-area: More;
+} 
+#About-Section {
+	grid-area: About-Section;
+	display: grid;
+	grid-template-areas:
+	"Header"
+	"AboutUL";
+}
+#About-Section h3 {
+	grid-area: Header;
+}
+#About-Section #AboutUL {
+	grid-area: AboutUL;
+	display: grid;
+	text-align: center;
+	grid-row-gap: 3em;
+	grid-template-areas: 
+	"Professional-History"
+	"Description"
+	"Show-Case"
+	"Contact"
+}
+
+#AboutUL #Professional-History {
+	grid-area: Professional-History;
+	display: grid;
+	justify-content: center;
+	grid-template-areas: 
+	"User-Professional-History"
+	"Add-History";
+}
+
+
+#AboutUL #Professional-History #User-Professional-History {
+	grid-area: User-Professional-History;
+}
+
+#AboutUL #Professional-History #User-Professional-History li {
+	display: grid;
+	padding: 2em 0em;
+	grid-template-rows: auto 2em;
+	grid-template-areas:
+	"Professional-History-Text Professional-History-Text"
+	"Edit-Info Delete-Info";
+}
+#AboutUL #Professional-History #User-Professional-History p {
+	grid-area: Professional-History-Text;
+}
+.Edit-Info img {
+	height: 1.5em;
+	width: 1.5em;
+	max-height: 100%;
+	max-width: 100%;
+}
+.Delete-Info img {
+	height: 1.5em;
+	width: 1.5em;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+#AboutUL #Professional-History #User-Professional-History li #Edit-Info {
+	grid-area: Edit-Info;
+}
+#AboutUL #Professional-History #User-Professional-History li #Delete-Info {
+	grid-area: Delete-Info;
+}
+
+#AboutUL #Professional-History #Add-History {
+	grid-area: Add-History;
+	display: grid;
+	grid-gap: 2em;
+	grid-template-areas: 
+	"Education-Label Education"
+	"Employment-Label Employment" 
+	"Submit-History Submit-History";
+}
+#AboutUL #Professional-History #Education-Label {
+	grid-area: Education-Label;
+}
+#AboutUL #Professional-History #Education {
+	grid-area: Education;
+}
+#AboutUL #Professional-History #Employment-Label {
+	grid-area: Employment-Label;
+}
+#AboutUL #Professional-History #Employment {
+	grid-area: Employment;
+}
+#AboutUL #Professional-History #Submit-History {
+	grid-area: Submit-History;
+}
+
+#AboutUL #Description {
+	grid-area: Description;
+}
+#AboutUL #Description textarea {
+	width: 100%;
+	text-align: center;
+	max-width: 100%;
+	resize: none;
+	height: 15em;
+}
+#AboutUL #Show-Case {
+	grid-area: Show-Case;
+	grid-template-areas: 
+	"Header"
+	"User-Show-CaseUL";
+}
+#AboutUL #Show-Case h3 {
+	grid-area: Header;
+}
+#AboutUL #Show-Case #User-Show-CaseUL {
+	grid-area: User-Show-CaseUL;
+}
+#AboutUL #Show-Case #User-Show-CaseUL li {
+	display: grid;
+	justify-items: center;
+	grid-template-areas: 
+	"Project-Link"
+	"Project-Description";
+}
+#AboutUL #Show-Case #User-Show-CaseUL li a {
+	grid-area: Project-Link;
+}
+#AboutUL #Show-Case #User-Show-CaseUL li p {
+	grid-area: Project-Description;
+}
+#AboutUL #Show-Case #User-Show-CaseUL li a img {
+	max-width: 100%;
+	height: 5em;
+}
+#AboutUL #Contact {
+	grid-area: Contact;
+	display: grid;
+	grid-template-areas: 
+	"Header"
+	"User-Contact-InfoUL"
+}
+#AboutUL #Contact h3 {
+	grid-area: Header;
+}
+#AboutUL #Contact #User-Contact-InfoUL {
+	grid-area: User-Contact-InfoUL;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	word-wrap: break-word;
+	grid-template-areas: 
+	"User-Contact-Controls User-Contact-Controls"
+	"User-Contact-Email User-Contact-Phone" 
+	"User-Contact-Address User-Contact-Fax";
+}
+#AboutUL #Contact #User-Contact-InfoUL #User-Contact-Controls {
+	grid-area: User-Contact-Controls;
+	margin-bottom: 2em;
+	justify-self: center;
+}
+#AboutUL #Contact #User-Contact-InfoUL li {
+	padding: 0.3em 2em;
+	text-align: center;
+}
+
+#AboutUL #Contact #User-Contact-InfoUL #User-Contact-Phone {
+	grid-area: User-Contact-Phone
+}
+#AboutUL #Contact #User-Contact-InfoUL #User-Contact-Fax{
+	grid-area: User-Contact-Fax;
+}
+#AboutUL #Contact #User-Contact-InfoUL #User-Contact-Email {
+	grid-area: User-Contact-Email;
+}
+#AboutUL #Contact #User-Contact-InfoUL #User-Contact-Address {
+	grid-area: User-Contact-Address;
+}
+#Professional-Section {
+	padding-bottom: 3em;
+	grid-area: Professional-Section;
+	display: grid;
+	grid-template-areas:
+	"Header" 
+	"Professional-LinksUL";
+}
+#Professional-Section h3 {
+	grid-area: Header;
+}
+#Professional-Section #Professional-LinksUL {
+	display: grid;
+	grid-area: Professional-LinksUL;
+	text-align: center;	
+	align-items: center;
+	grid-template-areas: 
+	"Professional-Links-Controls Professional-Links-Controls Professional-Links-Controls"
+	"GithubLI LinkedinLI StackoverflowLI"
+	"HackerrankLI Professional-WebsiteLI ResumeLI";
+}
+#Professional-Section #Professional-LinksUL #Professional-Links-Controls {
+	grid-area: Professional-Links-Controls;
+	margin-bottom: 2em;
+	justify-self: center;
+}
+#Professional-Section #Professional-LinksUL #GithubLI {
+	grid-area: GithubLI;
+}
+#Professional-Section #Professional-LinksUL #StackoverflowLI {
+	grid-area: StackoverflowLI;
+}
+#Professional-Section #Professional-LinksUL #LinkedinLI {
+	grid-area: LinkedinLI;
+}
+#Professional-Section #Professional-LinksUL #HackerrankLI {
+	grid-area: HackerrankLI;
+}
+#Professional-Section #Professional-LinksUL #Professional-WebsiteLI {
+	grid-area: Professional-WebsiteLI;
+}
+#Professional-Section #Professional-LinksUL #ResumeLI {
+	grid-area: ResumeLI;
+}
+
+@media only screen and (min-width: 1200px) {
+
+	main a {
+		color: #333;
+		font-weight: bold;
+	}
+	main a:hover {
+		color: #000;
+	}
+	main {
+		grid-template-columns: 20% 80%;
+		grid-template-areas: 
+		"Achievements Header"
+		"Achievements About";
+	}
+	#Achievements {
+		padding: 10em 0em;
+	}
+	#Achievements ul {
+	display: grid;
+	grid-template-areas:
+	"Header"
+	"Achievement-1" 
+	"Achievement-2"
+	"Achievement-3"
+	"Achievement-4"
+	"Achievement-5" 
+	"Achievement-6"
+	"Achievement-7"
+	"Achievement-Show-More";
+	}
+}

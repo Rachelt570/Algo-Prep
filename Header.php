@@ -1,5 +1,5 @@
 <?php 
-	require "scripts/php/session.php";
+	require "users/scripts/php/Find-Profile-Pic.php";
 ?>
 <header> 
 		<?php 
@@ -10,7 +10,7 @@
 				<li id = "Website-Logo"> 
 					<a href = "http://localhost/School-Project/index.php"> 
 						<figure>
-						 	<img id = "Logo" src = "http://localhost/School-Project/assets/logo.png" alt = "SITE_TITLE"/>
+						 	<img id = "Logo" src = "http://localhost/School-Project/assets/logo.png" alt = "Algo-Prep"/>
 						 </figure> 
 					</a>
 				</li>
@@ -19,6 +19,19 @@
 							<form id = "Logout" action = "http://localhost/School-Project/scripts/php/logout.php" method = "Post">
 								<input type = "submit" class = "Account-Button" name = "Logout-Submit" id = "Logout-Submit" value="Signout">
 							</form>
+							<a href = "http://localhost/School-Project/users/accounts/'.$_SESSION['userID'].'/'.'Messages.php" id = "Header-Messages">
+								<figure id = "Messages-Figure">
+									<img id = "Messages-Image" src = "	http://localhost/School-Project/Assets/Messages.png"/>
+									<figcaption> Messages </figcaption>
+								</figure>
+							</a>
+							<a href = "http://localhost/School-Project/users/accounts/'.$_SESSION['userID'].'/'.$_SESSION['Username'].'.php" id = "Profile-Link"> 			
+									<figure id = "Profile-Figure"> 
+										<img src = "'.$_SESSION['ProfilePicture'].'." id = "Profile-Picture" alt = "User-Name"/>
+										<figcaption> '.$_SESSION['Username'].' </figcaption>					
+								</figure>
+							</a>
+							
 						</div>
 				</li>
 				';

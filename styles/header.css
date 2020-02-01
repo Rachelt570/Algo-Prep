@@ -2,10 +2,14 @@ header {
 	padding: 1.5em;
 	background-color: #ccc;
 }
+header img	{
+	height: 4em;
+	width: 4em;
+}
 #Header-List {
 	display: grid;
 	align-items: center;
-	grid-template-columns: 33% 34% 33%;
+	grid-template-columns: 30% 70%;
 	grid-column-gap: 1em;
 	grid-template-areas: 
 	"Logo Logged-In-Content Logged-Out-Content";
@@ -19,12 +23,35 @@ header {
 	grid-area: Logged-In-Content;
 }
 #Logged-Out-Content {
-	float: right;
+	width: 100%;
+	display: grid;
 	grid-area: Logged-Out-Content;
+	justify-items: center;
+	align-items: center;
+	grid-template-columns: 34% 33% 33%	;
+	grid-template-areas: 
+	"Profile-Link Messages Logout";
+}
+#Profile-Link {
+	grid-area: Profile-Link;
+}
+#Header-Messages {
+	grid-area: Messages;
+}
+#Profile-Picture {
+
+	border: 0.1em solid black;
+	width: 4em;
+	height: 4em;
+	border-radius: 2em;
+}
+#Logout {
+	grid-area: Logout;
 }
 #Login-Form {
 	display: grid;
 	justify-items: center;
+	grid-template-columns: 8em 8em;
 	grid-area: Login-Form;
 	grid-template-areas: 
 	"Username-Input-Label Username-Input-Label"	
@@ -50,7 +77,6 @@ header {
 }
 #Login-Form #Login-Signup {
 	grid-area: Login-Signup;
-
 }
 .Account-Button {
 	background-color: blue;
