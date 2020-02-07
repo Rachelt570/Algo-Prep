@@ -9,6 +9,12 @@
 						<a href = "http://localhost/School-Project/Problems/Reverse-Linked-List.php"> Reverse-Linked-List </a>
 					</div>
 				</li>
-				<li id = "Nav-Resources"> <a href = "http://localhost/School-Project/Resources.php"> Resources </a></li>
+				<li id = "Nav-Resources-Dropdown-Container">
+					<p id = "Resources-Dropdown-Text"> Resources &#9660; </p>
+					<div id = "Resources-Dropdown-Content"> 
+						 <a href = "http://localhost/School-Project/Resources.php"> Main Resources </a>
+						 <a href = "http://localhost/School-Project/Forum/Forum.php"> Forum </a> 
+					</div>
+				</li>
 			</ul>
 </nav>

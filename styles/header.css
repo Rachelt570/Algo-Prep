@@ -38,6 +38,9 @@ header img	{
 #Header-Messages {
 	grid-area: Messages;
 }
+#Header-Messages img {
+	
+}
 #Profile-Picture {
 
 	border: 0.1em solid black;

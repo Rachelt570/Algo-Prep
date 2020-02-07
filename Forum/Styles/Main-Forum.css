@@ -1,0 +1,180 @@
+#About {
+	display: grid;
+	grid-template-areas: 
+	"Posts";
+}
+article {
+	width: 100%;
+	height: 100%;
+	padding: 0em;
+}
+#ForumUL {
+	width: 100%;
+	grid-area: Posts;
+	background-color: #241f11;
+	color: #fff;
+	padding: 1em 0em;
+}
+#ForumUL li {
+
+}
+#Forum-NavUL {
+	display: inline;
+}
+#Forum-NavUL li {
+	display: inline;
+}
+#Forum-NavUL li a {
+	padding: 0em;
+}
+h2 {
+	text-align: left;
+}
+li a {
+	padding: 0em 0em 0em 1em;
+}
+a {
+	color: #0ff;
+}
+a:hover {
+	color: #fff;
+}
+li  {
+	padding: 0em;
+}
+.Folder {
+	padding: 0.5em 0em 0.5em 1em;
+}
+
+
+
+
+
+#ForumUL .Forum-Post {
+	padding: 0em;
+	margin: 1em 0em;
+	background-color: #111;
+	display: grid;
+	grid-template-areas: 
+	"User-Info Post-Content";
+}
+
+
+.User-Info {
+	grid-area: User-Info;
+	padding: 1em;
+	margin: 0em;
+	width: 10em;
+	display: inline;
+	text-align: center;
+	background-color: #333;
+	
+}
+.User-Figure {
+	display: inline-grid;
+	justify-items: center;
+	align-items: center;
+	grid-template-areas: 
+	"Profile-Picture"
+	"figcaption"
+	"Forum-Role";
+}
+
+.User-Figure a {
+	padding: 0em;
+} 
+.User-Figure a .Profile-Picture {
+	display: inline;
+	width: 4em;
+	height: 4em;
+	border-radius: 2em;
+	border: 3px solid black;
+	grid-area: Profile-Picture;
+}
+
+.User-Figure figcaption {
+	color: #fff;
+	display: inline
+	grid-area: figcaption;
+}
+.User-Figure figcaption:hover {
+	color: #000;
+}
+
+.Forum-Role {
+	grid-area: Forum-Role;
+	font-size: 0.5em;
+}
+.Role-Administrator {
+	color: #0cf;
+}
+.Signature {
+	text-align: center;
+	font-size: 0.6em;
+}
+
+.Post-Content {
+	grid-area: Post-Content;
+	display: inline-grid;
+	align-items: center;
+	justify-items: center;
+	padding: 1.5em;
+	grid-template-areas: 
+	"Post";
+}
+
+.Post-Content p {
+	grid-area: Post;
+	display: inline;
+}
+
+#Add-Post {
+	background-color: #111;
+	padding: 1em 0em;
+	display: grid;
+	align-items: center;
+	grid-template-columns: 12em auto;
+	grid-template-areas: 
+	"Add-Info Form";
+}
+#Add-Post-Info {
+	display: inline-grid;
+	height: 100%;
+	background-color: #333;
+	width: 10em;
+	align-content:  center;
+	grid-template-areas: 
+	"Post-Info-Content";
+	padding: 1em;
+}
+#Add-Post-Info p {
+	grid-area: Post-Info-Content;
+	height: 100%;
+	background-color: #333;
+	width: 10em;
+}
+#Add-Post-Form {
+	height: 100%;
+	display: grid;
+	padding: 1em;
+	grid-template-areas: 
+	"Content"
+	"Submit";
+}
+#Add-Post-Form textarea {
+	background-color: transparent;
+	color: #fff;
+	grid-area: Content;
+	border: 2px solid white;
+	resize: none;
+	height: 20em;
+ 	font-family: 'Playfair Display', serif
+}
+#Add-Post-Form input {
+	grid-area: Submit;
+}
+
+.Disabled {
+	color: #333;
+	background-color: #999;
+}

@@ -7,6 +7,7 @@
 	padding: 1.5em 0em;
 	display: grid;
 	justify-items: center;
+	align-items: center;
 	overflow: hidden;
 	grid-template-areas: 
 	"Home Problems Resources";
@@ -28,7 +29,18 @@
 	overflow: hidden;
 	grid-area: Problems;
 }
+#Nav-Resources-Dropdown-Container {
+	text-algin: center;
+	overflow: hidden;
+	grid-area: Resources;
+}
 #Dropdown-Content {
+	background: inherit;
+	position: absolute;
+	text-align: left;
+	display: none;
+}
+#Resources-Dropdown-Content {
 	background: inherit;
 	position: absolute;
 	text-align: left;
@@ -42,8 +54,16 @@
 	background-color: transparent;
 	display: block;
 }
+#Resources-Dropdown-Content a {
+	padding: 0.5em 0.5em;
+	background-color: transparent;
+	display: block;
+}
 
 #Nav-Dropdown-Container:hover {
+	background-color: #333;
+}
+#Resources-Dropdown-Content a {
 	background-color: #333;
 }
 #Nav-Dropdown-Container:hover #Dropdown-Content {
@@ -51,6 +71,14 @@
 	z-index: 1;
 	overflow: all;
 }
+#Nav-Resources-Dropdown-Container:hover #Resources-Dropdown-Content {
+	display: block;
+	z-index: 1;
+	overflow: all;
+}
 #Dropdown-Content a:hover {
+	background-color: #555;
+}
+#Resources-Dropdown-Content a:hover {
 	background-color: #555;
 }
